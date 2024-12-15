@@ -7,7 +7,6 @@ class Magazine:
         self.name = name
         self.category = category
 
-    
     @property
     def id(self):
         return self._id
@@ -94,26 +93,5 @@ class Magazine:
     
     def get_magazine_id(self):
         return self.id
-    
-
-        """
-
-        CURSOR.execute(sql, (self.id,))
-        article_data = CURSOR.fetchall()
-
-        articles = []
-        for row in article_data:
-            articles.append(Article(*row))
-
-        return articles
-    
-    # def contibutors(self):
-    #     from models.author import Author
-    #     conn = get_db_connection()
-    #     CURSOR = conn.cursor()
-    #     sql = """
-    #         SELECT DISTINCT a.*
-    #         FROM authors a
-    #         INNER JOIN"""
 
         
